@@ -1,3 +1,5 @@
+Empresa de Distribuição
+
 Loja (l_nome, horario, localizacao, funcionarios)
 Produtos (P_ID, tipo, nome, stock_minimo, preco_de_venda, quantidade_de_stock)
 Fornecedores (F_ID)
@@ -5,15 +7,13 @@ Secções (s_nome, localizacao, tipo)
 Arcas (A_ID, capacidade, localizacao, temperaturas_de_funcionamento)
 Datas (P_ID, producao, expiracao)
 Descontos (P_ID, descontos)
-Encomendas (P_ID, precos, quantidade_da_encomenda)
-Tamanho (l_nome, n_caixas, area)
+Encomenda (P_ID, precos, quantidade_da_encomenda)
+Tamanho (l_nome, n_caixas, area, tamanho)
 
 Pertence (l_nome, s_nome, P_ID)
 Fornece (l_nome, F_ID)
 Armazena (P_ID, A_ID)
 Contrato (F_ID, P_ID, localizacao_servicos)
-Possui (P_ID)
-Tem (l_nome)
 
 l_nome: FK (Loja)
 s_nome: FK (Secções)
