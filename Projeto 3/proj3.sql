@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 30, 2017 at 11:45 AM
+-- Generation Time: May 31, 2017 at 12:29 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.0.15
 
@@ -40,7 +40,13 @@ CREATE TABLE `Arcas` (
 --
 
 INSERT INTO `Arcas` (`A_ID`, `localizacao`, `capacidade`) VALUES
-(0, '', 0);
+(0, '', 0),
+(1, 'oriente', 60),
+(2, NULL, NULL),
+(3, NULL, NULL),
+(4, 'lisboa', 50),
+(6, 'porto', 45),
+(7, 'amadora', 20);
 
 -- --------------------------------------------------------
 
@@ -117,6 +123,13 @@ CREATE TABLE `Fornecedores` (
   `F_ID` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `Fornecedores`
+--
+
+INSERT INTO `Fornecedores` (`F_ID`) VALUES
+(1);
+
 -- --------------------------------------------------------
 
 --
@@ -151,6 +164,13 @@ CREATE TABLE `Loja` (
   `funcionarios` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `Loja`
+--
+
+INSERT INTO `Loja` (`l_nome`, `horario`, `localizacao`, `funcionarios`) VALUES
+('lidl', '0000-00-00 00:00:00', 'chelas', 'fernando');
+
 -- --------------------------------------------------------
 
 --
@@ -179,6 +199,13 @@ CREATE TABLE `Produtos` (
   `preco_venda` decimal(4,2) DEFAULT NULL,
   `quantidade_stock` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Produtos`
+--
+
+INSERT INTO `Produtos` (`P_ID`, `tipo`, `nome`, `stock_minimo`, `preco_venda`, `quantidade_stock`) VALUES
+(1, 'refrigerante', '', 5, '1.00', 500);
 
 -- --------------------------------------------------------
 
