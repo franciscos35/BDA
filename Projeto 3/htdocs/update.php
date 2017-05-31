@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<p>Insert</p>
+<p>Update</p>
 <a href="update/produto.php">Produto</a><br>
 <a href="update/loja.php">Loja</a><br>
 <a href="update/arca.php">Arca</a><br>
